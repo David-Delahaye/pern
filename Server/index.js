@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config()
-const PORT = 3000;
+const PORT = 5000;
 const cors = require('cors');
 const pool = require('./db');
 
@@ -70,7 +70,7 @@ try {
 })
 
 
-app.listen(3000, () => {
+app.listen(5000, () => {
     console.log(`LISTENING ON PORT: ${PORT}`);
 })
 
