@@ -1,14 +1,21 @@
 {
-  "name": "server",
+  "name": "004-pern-todo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "David Delahaye",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Delahaye/pern.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Delahaye/pern/issues"
+  },
+  "homepage": "https://github.com/David-Delahaye/pern#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
