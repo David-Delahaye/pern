@@ -1,8 +1,8 @@
-const {Client} = require('./node_modules/pg').Pool;
-
+const {Client} = require('pg');
+const db_PORT = (process.env.DATABASE_URL || '3000');
 
 const client = new Client({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: db_PORT,
     ssl: {
       rejectUnauthorized: false
     }
