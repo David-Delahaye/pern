@@ -1,12 +1,11 @@
-const {Client} = require('pg');
-const db_PORT = (process.env.DATABASE_URL || '3000');
+const {Pool} = require('pg');
 
-const client = new Client({
-    connectionString: db_PORT,
-    ssl: {
-      rejectUnauthorized: false
-    }
+
+const pool = new Pool({
+    connectionString: (process.env.DATABASE_URL || 'postgresql://postgres:gov15bees@localhost:5433/perntodo'),
+    // ssl: {
+    //   rejectUnauthorized: false
+    // }
 });
 
-client.connect();
-module.exports = client;
+module.exports = pool;
